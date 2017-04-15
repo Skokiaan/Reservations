@@ -24,15 +24,15 @@ var reservations = [];
 
 // Basic route that sends the user first to the AJAX Page
 app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "hotRestaurant.html"));
+    res.sendFile(path.join(__dirname, "restaurant.html"));
 });
 
 app.get("/tables", function(req, res) {
     res.sendFile(path.join(__dirname, "tables.html"));
 });
 
-app.get("/makeReservations", function(req, res) {
-    res.sendFile(path.join(__dirname, "makeReservations.html"));
+app.get("/makeReservation", function(req, res) {
+    res.sendFile(path.join(__dirname, "makeReservation.html"));
 });
 
 
